@@ -1,0 +1,25 @@
+{
+  "notes": [
+    {
+      "id": "2",
+      "date": "12 july",
+      "title": "note 2",
+      "desc": "note 2 desc",
+      "isCompleted": true
+    },
+    {
+      "id": "4",
+      "date": "09 july",
+      "title": "note 4",
+      "desc": "note 4 desc",
+      "isCompleted": true
+    },
+    {
+      "id": "5",
+      "date": "20 july",
+      "title": "note 5",
+      "desc": "note 5 desc",
+      "isCompleted": false
+    }
+  ]
+}
