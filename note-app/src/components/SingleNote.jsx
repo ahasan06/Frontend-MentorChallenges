@@ -23,8 +23,10 @@ const SingleNote = ({ note }) => {
   };
 
   const editNoteHandler = () => {
-    dispatch(editNote(note))
+      dispatch(editNote(note));
+    
   }
+  
 
   const toggleHandler = async (note, isCompleted) => {
     toggleUpdate({ ...note, isCompleted })
@@ -52,14 +54,14 @@ const SingleNote = ({ note }) => {
         {
           note.isCompleted ? (
             <>
-              <p className='pb-1 italic text-slate-400  line-through' style={{ 'font-size': '12px' }}>{note.title}</p>
+              <p className='pb-1 italic text-slate-400  line-through'  style={{ fontSize: '12px' }}>{note.title}</p>
               <hr className='w-full absolute opacity-30 ' />
               <p className=' text-slate-400 line-through mt-1'>{note.desc}</p>
             </>
           ) :
             (
               <>
-              <p className='pb-1 italic text-slate-400' style={{ 'font-size': '12px' }}>{note.title}</p>
+              <p className='pb-1 italic text-slate-400 ' style={{ fontSize: '12px' }}>{note.title}</p>
               <hr className='w-full absolute opacity-30' />
               <p className='mt-1' >{note.desc}</p>
             </>

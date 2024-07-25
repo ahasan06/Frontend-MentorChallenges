@@ -10,9 +10,9 @@ const noteReducer = createSlice({
     },
    
     reducers: {
+         
         editNote(state, action) {
-            state.editNote = action.payload;
-            console.log("editProduct:", state.editNote); 
+                state.editNote = action.payload; 
         }
     }
     

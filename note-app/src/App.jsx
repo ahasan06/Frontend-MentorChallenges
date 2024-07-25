@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react-hooks/exhaustive-deps */
 
 // import './App.css'
@@ -10,9 +11,7 @@ import { useGetAllNotesQuery } from './store/features/apiSlice';
 import { useAddNoteMutation } from './store/features/apiSlice';
 import { useUpdateNoteMutation } from './store/features/apiSlice';
 import { useSelector } from 'react-redux';
-
 import { useRemoveNoteMutation } from './store/features/apiSlice';
-
 
 
 function App() {
@@ -29,9 +28,9 @@ function App() {
   const [removeNote] = useRemoveNoteMutation()
 
   const [formData, setFormData] = useState(initialState)
-  console.log("initalData", formData);
   const formRef = useRef(null);
-  const editNote = useSelector(storeState => storeState.notes.editNote)
+  const [filter, setFilter] = useState('All');
+  const editableNote = useSelector(storeState => storeState.notes.editNote)
 
 
   const inputOnChange = (e) => {
@@ -42,19 +41,23 @@ function App() {
     });
   };
 
-  const noteLeft = notes.filter(note=>!note.isCompleted)
+  const noteLeft = notes?.filter(note => !note.isCompleted)
 
-  const handleSubmit = async () => {
-    if (editNote && formData.title.trim() && formData.desc.trim()) {
-      await updateNote(formData)
-      setFormData(initialState);
-    }
-    else if (formData.title.trim() && formData.desc.trim()) {
-      await addNote(formData);
-      setFormData(initialState);
-    }
 
+  const handleSubmit =  () => {
+
+      if (editableNote && formData.title.trim() && formData.desc.trim()) {
+         updateNote(formData)
+         setFormData(initialState);
+      }
+      else if( formData.title.trim() && formData.desc.trim()) {
+         addNote(formData);
+         setFormData(initialState);
+      }
+
+    
   };
+
 
   const clearCompletedHandler = async () => {
     const completedNotes = notes.filter(note => note.isCompleted);
@@ -62,6 +65,13 @@ function App() {
       await removeNote(note.id);
     });
   }
+
+  useEffect(() => {
+    if (editableNote) {
+      setFormData(editableNote)
+    }
+    
+  }, [editableNote])
 
 
   useEffect(() => {
@@ -74,6 +84,7 @@ function App() {
     const handleClickOutside = (e) => {
       if (formRef.current && !formRef.current.contains(e.target)) {
         handleSubmit();
+   
       }
     }
 
@@ -90,13 +101,31 @@ function App() {
   }, [handleSubmit]);
 
 
-  useEffect(() => {
-    if (editNote) {
-      setFormData(editNote)
-    }
-  }, [editNote])
+
+
+
 
   console.log("FormData", formData);
+  console.log("EditableNote", editableNote);
+
+
+
+  const getAllFilter = () => {
+    switch (filter) {
+      case 'Active':
+        {
+          return notes?.filter(note=>!note.isCompleted)
+        }
+      case 'Completed':
+        {
+          return notes?.filter(note=>note.isCompleted)
+        }
+
+      default:
+        return notes;
+    }
+  }
+
 
   if (isFetching) {
     return <h1>Loading........</h1>;
@@ -141,7 +170,7 @@ function App() {
           <ul className=" form-body  bg-slate-800 rounded py-1">
 
             {
-              notes?.map(notes => (
+              getAllFilter()?.map(notes => (
                 <SingleNote note={notes} key={notes.id} />
               ))
             }
@@ -158,9 +187,9 @@ function App() {
 
           <div action=""
             className='w-full flex items-center justify-center gap-6 py-4 px-6 rounded text-slate-500 font-bold bg-slate-800 mt-3'>
-            <button>All</button>
-            <button>Active</button>
-            <button>Completed</button>
+            <button onClick={() => setFilter('All')}>All</button>
+            <button onClick={() => setFilter('Active')}>Active</button>
+            <button onClick={() => setFilter('Completed')}>Completed</button>
           </div>
 
         </div>
