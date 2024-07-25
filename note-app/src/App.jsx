@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 // import './App.css'
 
@@ -7,32 +8,31 @@ import SingleNote from './components/SingleNote';
 
 import { useGetAllNotesQuery } from './store/features/apiSlice';
 import { useAddNoteMutation } from './store/features/apiSlice';
+import { useUpdateNoteMutation } from './store/features/apiSlice';
+import { useSelector } from 'react-redux';
+
+import { useRemoveNoteMutation } from './store/features/apiSlice';
+
+
 
 function App() {
+
   const initialState = {
     title: ``,
     desc: ``,
+    date: new Date().toISOString().split('T')[0]
   }
 
   const { isError, isFetching, error, data: notes } = useGetAllNotesQuery()
   const [addNote] = useAddNoteMutation()
+  const [updateNote] = useUpdateNoteMutation()
+  const [removeNote] = useRemoveNoteMutation()
+
   const [formData, setFormData] = useState(initialState)
-  console.log("initalData",formData);
-  const formRef = useRef(null)
+  console.log("initalData", formData);
+  const formRef = useRef(null);
+  const editNote = useSelector(storeState => storeState.notes.editNote)
 
-
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      e.preventDefault()
-      if (formRef.current && !formRef.current.contains(e.target)) {
-        handleSubmit()
-      }
-    }
-    window.addEventListener(`click`, handleClickOutside)
-    return () => {
-      window.removeEventListener(`click`, handleClickOutside)
-    }
-  }, [formData])
 
   const inputOnChange = (e) => {
     const { name, value } = e.target;
@@ -42,12 +42,62 @@ function App() {
     });
   };
 
+  const noteLeft = notes.filter(note=>!note.isCompleted)
+
   const handleSubmit = async () => {
-    if (formData.title.trim() && formData.desc.trim()) {
+    if (editNote && formData.title.trim() && formData.desc.trim()) {
+      await updateNote(formData)
+      setFormData(initialState);
+    }
+    else if (formData.title.trim() && formData.desc.trim()) {
       await addNote(formData);
       setFormData(initialState);
     }
+
   };
+
+  const clearCompletedHandler = async () => {
+    const completedNotes = notes.filter(note => note.isCompleted);
+    completedNotes.forEach(async (note) => {
+      await removeNote(note.id);
+    });
+  }
+
+
+  useEffect(() => {
+
+    const handleEnter = (e) => {
+      if (e.key === 'Enter') {
+        handleSubmit();
+      }
+    }
+    const handleClickOutside = (e) => {
+      if (formRef.current && !formRef.current.contains(e.target)) {
+        handleSubmit();
+      }
+    }
+
+    document.addEventListener('keydown', handleEnter);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('keydown', handleEnter);
+      document.removeEventListener('keydown', handleEnter);
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+
+  }, [handleSubmit]);
+
+
+  useEffect(() => {
+    if (editNote) {
+      setFormData(editNote)
+    }
+  }, [editNote])
+
+  console.log("FormData", formData);
+
   if (isFetching) {
     return <h1>Loading........</h1>;
   }
@@ -75,14 +125,14 @@ function App() {
               <input type="text" placeholder='Create a new todo...'
                 className=' focus:none outline-none text-sm  bg-slate-800 text-slate-200 pl-5 pb-1'
                 name='title'
-                value={FormData.title}
+                value={formData.title}
                 onChange={inputOnChange}
               />
               <hr className='w-full ml-5 opacity-30' />
               <input type="text" placeholder='Add note description...'
                 className=' focus:none outline-none text-sm  bg-slate-800 text-slate-200 pl-5 '
                 name='desc'
-                value={FormData.desc}
+                value={formData.desc}
                 onChange={inputOnChange}
               />
             </div>
@@ -99,8 +149,8 @@ function App() {
 
             <li className='w-full flex items-center py-3 px-6'>
               <div className='py-2 flex justify-between w-full text-slate-500 text-sm'>
-                <p>5 items left</p>
-                <button>Clear Completed</button>
+                <p>{noteLeft.length} items left</p>
+                <button onClick={clearCompletedHandler}>Clear Completed</button>
               </div>
             </li>
 

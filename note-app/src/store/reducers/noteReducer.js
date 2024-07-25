@@ -4,12 +4,22 @@ import {
 
 const noteReducer = createSlice({
     name:`noteReducer`,
-    initialState:[],
-    reducers:{
-        
+    initialState:{
+        notes:[],
+        editNote:null,
+    },
+   
+    reducers: {
+        editNote(state, action) {
+            state.editNote = action.payload;
+            console.log("editProduct:", state.editNote); 
+        }
     }
+    
 })
-export const {
 
+export const {
+    notes,
+    editNote
 } = noteReducer.actions
 export default noteReducer.reducer

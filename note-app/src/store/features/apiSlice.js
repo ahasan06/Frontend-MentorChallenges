@@ -30,6 +30,15 @@ export const rootApi = createApi({
             }),
             invalidatesTags: ['notes']
         }),
+        updateNote:builder.mutation({
+            query:(note)=>({
+                url:`notes/${note.id}`,
+                method:`PUT`,
+                body:note
+                
+            }),
+            invalidatesTags: ['notes']
+        })
         
     }),
 
@@ -40,5 +49,6 @@ export const {
     useGetAllNotesQuery,
     useAddNoteMutation,
     useRemoveNoteMutation,
+    useUpdateNoteMutation
 
 } = rootApi
