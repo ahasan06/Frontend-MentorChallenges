@@ -26,14 +26,14 @@
       "title": "Gym Session",
       "desc": "Attend yoga class at 6 PM",
       "date": "2024-07-27",
-      "isCompleted": true
+      "isCompleted": false
     },
     {
       "id": "5",
       "title": "Team Meeting",
       "desc": "Discuss Q3 goals - virtual calls",
       "date": "2024-07-28",
-      "isCompleted": false
+      "isCompleted": true
     }
   ]
 }

@@ -53,14 +53,14 @@ const SingleNote = ({ note }) => {
           note.isCompleted ? (
             <>
               <p className='pb-1 italic text-slate-400  line-through' style={{ 'font-size': '12px' }}>{note.title}</p>
-              <hr className='w-9/12 absolute opacity-30 ' />
+              <hr className='w-full absolute opacity-30 ' />
               <p className=' text-slate-400 line-through mt-1'>{note.desc}</p>
             </>
           ) :
             (
               <>
               <p className='pb-1 italic text-slate-400' style={{ 'font-size': '12px' }}>{note.title}</p>
-              <hr className='w-9/12 absolute opacity-30' />
+              <hr className='w-full absolute opacity-30' />
               <p className='mt-1' >{note.desc}</p>
             </>
           )
