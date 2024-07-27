@@ -6,7 +6,7 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 
 Here's a list of projects you can explore. Click on the project name to go to the specific branch, or check out the live demo directly.
 
-### [Testimonials Section Using Tailwind CSS](https://github.com/ahasan06/Frontend-MentorChallenges/tree/testimonials-section)
+### [Testimonials Section Using Tailwind CSS](https://github.com/ahasan06/Frontend-MentorChallenges/tree/testimonial-grid-section)
 ![Testimonials Section ](https://github.com/user-attachments/assets/0f76c48a-861b-4f74-b26a-65d7fafa1613)
 - **[View Live Demo](https://66910ea8c9481a22d3ea37fb--elaborate-selkie-3b3039.netlify.app/)**
 
