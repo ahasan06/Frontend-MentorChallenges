@@ -10,12 +10,13 @@ Here's a list of projects you can explore. Click on the project name to go to th
 ![Testimonials Section ](https://github.com/user-attachments/assets/0f76c48a-861b-4f74-b26a-65d7fafa1613)
 - **[View Live Demo](https://66910ea8c9481a22d3ea37fb--elaborate-selkie-3b3039.netlify.app/)**
 
-### [E-commerce ShopCart with React and Tailwind CSS](https://github.com/ahasan06/Frontend-MentorChallenges/tree/shopcart-ecommerce)
-![E-commerce Preview](link-to-screenshot)
+### [E-commerce ShopCart with React and Tailwind CSS](https://github.com/ahasan06/Frontend-MentorChallenges/tree/e-commerce-product-page)
+![E-commerce ShopCart](https://github.com/user-attachments/assets/3b0f514c-ba04-46db-9c4f-36002ea31bca)
 - **[View Live Demo](https://shopcart-tailwind-react.netlify.app/)**
 
 ### [Insure Landing Page with React and Tailwind CSS](https://github.com/ahasan06/Frontend-MentorChallenges/tree/insure-landing-page)
-![Insure Landing Page Preview](link-to-screenshot)
+![Insure Landing Page](https://github.com/user-attachments/assets/6c320655-b728-463e-b3db-37a45b1babd2)
+
 - **[View Live Demo](https://insure-tailwind-react.netlify.app/)**
 
 ## Getting Involved
