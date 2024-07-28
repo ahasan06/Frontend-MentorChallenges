@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import addToCartIcon from '../../images/icon-add-to-cart.svg'
 
 const ProductItem = ({product}) => {
     return (
@@ -9,6 +9,7 @@ const ProductItem = ({product}) => {
                     <img src={product.image.mobile} alt="" />
                     <img src={product.image.desktop}  alt={product.name} className="hidden"/>
                 <button> Add to Cart</button>
+                <img src={addToCartIcon} alt="" />
                 </div>
                 <div className="cart-body">
 

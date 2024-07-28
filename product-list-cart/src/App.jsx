@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setProducts } from './store/reducers/prodCartReducer';
 import ProductList from './components/products/ProductList';
 
+
 const App = () => {
 
   const dispatch = useDispatch()
@@ -18,6 +19,7 @@ const App = () => {
         <div className="product-container p-8">
           <div className="product-list">
             <h1 className='font-bold text-3xl text-rose-950'>Desserts</h1>
+       
             <ProductList/>
           </div>
           <div className="product-cart"></div>
