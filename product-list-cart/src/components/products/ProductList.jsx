@@ -5,7 +5,7 @@ const ProductList = () => {
     console.log("Prod in componenets",products);
 
     return (
-        <div>
+        <div className="md:grid grid-cols-3 gap-5">
             {
                 products?.map((product)=>(
                     <ProductItem product={product} key={product.id}/>
