@@ -6,7 +6,7 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 
 Here's a list of projects you can explore. Click on the project name to go to the specific branch, or check out the live demo directly.
 
-### [Product List with Cart Resposive||React|| Redux-ToolKit|| Tailwind ](https://github.com/ahasan06/Frontend-MentorChallenges/tree/product-list-with-cart)
+### [Product List with Cart Responsive||React|| Redux-ToolKit|| Tailwind ](https://github.com/ahasan06/Frontend-MentorChallenges/tree/product-list-with-cart)
 ![Product list with cart](https://github.com/user-attachments/assets/ab1a18bd-4223-46e3-8a3a-3bd7b6daf7eb)
 - **[View Live Demo](https://product-list-cart-react.netlify.app/)**
   
