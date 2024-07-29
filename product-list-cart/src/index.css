@@ -6,3 +6,22 @@
 body{
   font-family: "Red Hat Text", sans-serif;
 }
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-rose-100;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-rose-400;
+  border-radius: 10px; 
+}
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (min-width: 1024px) {
+  .popUp-card {
+      width: 500px;
+  }
+}
