@@ -18,4 +18,4 @@ Experience the live version of the room home page:
 If you want to clone only the `room-home-page` branch to your local machine, use the following Git command:
 
 ```bash
-git clone -b e-room-home-page https://github.com/ahasan06/Frontend-MentorChallenges.git
+git clone -b room-home-page https://github.com/ahasan06/Frontend-MentorChallenges.git
