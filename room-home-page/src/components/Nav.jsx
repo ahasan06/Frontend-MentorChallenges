@@ -32,7 +32,7 @@ function Nav() {
             >
               <img src={crossIcon} alt="" />
             </button>
-            <ul className="text-black font-semibold h-full flex justify-center items-center gap-3 ">
+            <ul className="nav-list text-black font-semibold h-full flex justify-center items-center gap-3 ">
               <li>
                 <a href="">home</a>
               </li>
@@ -50,12 +50,12 @@ function Nav() {
         )}
       </nav>
 
-      <nav className="md:flex items-center gap-20 absolute z-50 w-full px-20 py-8 desktop-navigation hidden">
+      <nav className="md:flex items-center gap-16 absolute z-50 w-full px-20 py-8 desktop-navigation hidden">
             <img
               src={logo}
               alt=" "
             />
-            <ul className="text-white  h-full flex justify-center items-center gap-6 text-xl">
+            <ul className="nav-list text-white  h-full flex justify-center items-center gap-6 text-xl">
               <li>
                 <a href="">home</a>
               </li>
