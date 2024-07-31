@@ -7,4 +7,4 @@ Welcome to the Frontend Mentor Challenges repository! This repository contains s
 To clone the `room-home-page` branch, use the following command:
 
 ```bash
-git clone -b e-room-home-page https://github.com/ahasan06/Frontend-MentorChallenges.git
+git clone -b room-home-page https://github.com/ahasan06/Frontend-MentorChallenges.git
