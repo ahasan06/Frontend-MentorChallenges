@@ -9,13 +9,13 @@ Welcome to the "Intro section dropdown nav" project from the Frontend Mentor Cha
 
 ## Live Demo
 
-Experience the live version of the room home page:
+Experience the live version of the intro-section-dropdown-nav:
 - **[View Live Demo](https://intro-section-tailwind-react.netlify.app/#)**
   
 ![intro section dropdown](https://github.com/user-attachments/assets/a268378c-45ec-4e4c-8ee9-d19b29c26b70)
 
 ## Clone This Branch
-If you want to clone only the `room-home-page` branch to your local machine, use the following Git command:
+If you want to clone only the `intro-section-dropdown-nav` branch to your local machine, use the following Git command:
 
 ```bash
 git clone -b intro-section-dropdown-nav https://github.com/ahasan06/Frontend-MentorChallenges.git
