@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,body,h1,h2,h3,p,li,a{
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+/* Nav tailwind css start here */
+
+li {
+  @apply  text-mediumGray hover:text-black font-medium cursor-pointer
+}
+.nav-sublist{
+  @apply p-5 flex flex-col gap-3
+}
+.nav-sublist li{
+  @apply flex items-center gap-5 text-sm
+}
+.nav-sublist img{
+  @apply w-4 
+}
+.custom-btn{
+  @apply  text-mediumGray border px-4 py-2 rounded-xl hover:border-black
+}
+.hero-partner img{
+  width: 75px;
+  @apply md:w-full 
+}
+/* Nav tailwind css end here */
+@media screen and (max-width: 1400px) and (min-width: 760px) {
+  .hero-partner{
+    justify-content: start;
+    gap: 7%;
+  }
+  h1{
+    font-size: 4vw!important;
+  }
+  p{
+    width: 100%!important;
+  }
+  .hero-partner img{
+    width: 75px;
+  }
+  .hero-image-desktop {
+    height: 75%;
+   }
+ 
+}
+
+
+@media screen and (min-width: 1400px) {
+
+  .hero-partner{
+    justify-content: start;
+    gap: 7%;
+  }
+  .hero-partner img{
+    width: 100px;
+  }
+  p{
+    width: 58%!important;
+  }  
+  .hero-image-desktop {
+    height: 79%;
+   }
+ 
+}
+
