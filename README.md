@@ -1,4 +1,4 @@
-# Room Home Page - Frontend Mentor Challenge
+# Intro Section Dropdown nav - Frontend Mentor Challenge
 
 Welcome to the "Intro section dropdown nav" project from the Frontend Mentor Challenges! This specific branch contains the solution to the Intro section dropdown challenge, implemented using a robust tech stack that includes React, and styled with Tailwind CSS.
 
