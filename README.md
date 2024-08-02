@@ -7,6 +7,9 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
   <tr>
     <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/product-list-with-cart">Product List with Cart</a></td>
   </tr>
+   <tr>
+    <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/job-list-filtering">Job list with filtering</a></td>
+  </tr>
   <tr>
     <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/room-home-page">Room Home Page</a></td>
   </tr>
