@@ -1,22 +1,22 @@
-# Frontend-MentorChallenges
- 
-# Testimonials Section Using Tailwind CSS
+# product-list-with-cart - Frontend Mentor Challenge
+
+Welcome to the "product-list-with-carte" project from the Frontend Mentor Challenges! This specific branch contains the solution to the room home page challenge, implemented using a robust tech stack that includes React, Redux, Redux Toolkit, and styled with Tailwind CSS.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Redux & Redux Toolkit**: For state management across the app.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
 ## Live Demo
-You can view a live demo of the testimonials section here:
-[Live Demo](https://66910ea8c9481a22d3ea37fb--elaborate-selkie-3b3039.netlify.app/)
 
-# E-commerce ShopCart with React and Tailwind CSS
-## Live Demo
-You can view a live demo of the E-commarce ShopCar section here:
-[Live Demo](https://shopcart-tailwind-react.netlify.app/)
+Experience the live version of the product-list-with-cart:
+- **[View Live Demo](https://product-list-cart-react.netlify.app/)**
+  
+![Product list with cart](https://github.com/user-attachments/assets/ab1a18bd-4223-46e3-8a3a-3bd7b6daf7eb)
+## Clone This Branch
+If you want to clone only the `product-list-with-cart` branch to your local machine, use the following Git command:
 
-# Insure Landing Page with React and Tailwind CSS
-## Live Demo
-You can view a live demo of the E-commarce ShopCar section here:
-[Live Demo](https://insure-tailwind-react.netlify.app/)
+```bash
+git clone -b product-list-with-cart https://github.com/ahasan06/Frontend-MentorChallenges.git
 
-## Contact
-
-For any inquiries, support requests, or contributions, please don't hesitate to reach out via email at [ahasanhnahid@gmail.com]. We look forward to your feedback and contributions!
-
-This live demo lets you interact with the user interface, test its responsiveness across different devices, and explore the smooth integration of React components with Tailwind CSS for a seamless experience.
