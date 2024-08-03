@@ -11,6 +11,7 @@ Welcome to the "job-list-filtering" project from the Frontend Mentor Challenges!
 ## Live Demo
 - **[View Live Demo]()**
 Experience the live version of the job-list-filtering:
+![intro section dropdown](https://github.com/user-attachments/assets/51333322-c32a-41a8-8a1e-275a709a7104)
 
 ## Clone This Branch
 If you want to clone only the `job-list-filtering` branch to your local machine, use the following Git command:
