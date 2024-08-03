@@ -38,7 +38,7 @@ function App() {
     : jobList;
 
   return (
-    <div className='bg-light-grayish-cyan-background pb-20  h-screen'>
+    <div className='bg-light-grayish-cyan-background pb-20   min-h-screen'>
       <header className='w-full bg-desaturated-dark-cyan'>
         <img src={headerBgIcon} alt='header-icon' role='headerIcon' className='w-full block md:hidden' />
         <img src={headerBgIconDesk} alt='header-icon' role='headerIcon' className='w-full hidden md:block' />

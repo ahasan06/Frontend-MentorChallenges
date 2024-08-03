@@ -41,13 +41,13 @@ function JobDetailsCart({ jobLists }) {
           </div>
           <div className="card-roles grid grid-cols-3 py-6 gap-4 text-lg  lg:flex items-center flex-1 justify-end">
             <button
-              className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded'
+              className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded lg:px-3'
               onClick={() => dispatch(addRoleToSearchCart(jobLists?.role))}
             >
               {jobLists?.role}
             </button>
             <button
-              className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded'
+              className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded lg:px-3'
               onClick={() => dispatch(addRoleToSearchCart(jobLists?.level))}
             >
               {jobLists?.level}
@@ -55,7 +55,7 @@ function JobDetailsCart({ jobLists }) {
             {jobLists.languages.map((language, index) => (
               <button
                 key={index}
-                className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded'
+                className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded lg:px-3'
                 onClick={() => dispatch(addRoleToSearchCart(language))}
               >
                 {language}
@@ -64,7 +64,7 @@ function JobDetailsCart({ jobLists }) {
             {jobLists.tools.map((tool, index) => (
               <button
                 key={index}
-                className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded'
+                className='bg-light-grayish-cyan-background text-desaturated-dark-cyan font-bold pt-1 rounded lg:px-3'
                 onClick={() => dispatch(addRoleToSearchCart(tool))}
               >
                 {tool}
