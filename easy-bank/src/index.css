@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,h1,h2,h3,h4,body,li,p,a{
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+.custom-btn{
+    @apply bg-gradient-to-r from-lime-green to-bright-cyan hover:from-bright-cyan hover:to-lime-green text-white px-6 py-2 rounded-full
+}
+.mobile-navigation {
+    @apply md:hidden bg-white flex flex-col text-2xl gap-3 font-medium py-20  rounded-lg capitalize text-slate-500 shadow-xl w-10/12  absolute  top-24 left-1/2  -translate-x-1/2 z-20 items-center
+}
+.desktop-navigation {
+    @apply hidden md:shadow-none md:static md:py-0 md:gap-5 md:flex md:flex-row md:w-auto md:top-auto md:left-auto md:translate-x-0 
+}
+
