@@ -4,6 +4,9 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 
 ## Table of Contents
 <table>
+   <tr>
+    <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/easybank-landing-page">easybank-landing-page</a></td>
+  </tr>
   <tr>
     <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/product-list-with-cart">Product List with Cart</a></td>
   </tr>
@@ -29,7 +32,11 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 
 ## Projects Overview
 
-Here's a list of projects you can explore. Click on the project name to go to the specific branch, or check out the live demo directly.
+Here's a list of projects you can explore. Click on the project name to go to the specific branch, or check out the live demo directly
+
+### [Easy bank landing page Responsive || React || Tailwind](https://github.com/ahasan06/Frontend-MentorChallenges/tree/easybank-landing-page)
+![easy bank](https://github.com/user-attachments/assets/62807c77-9533-4887-b8f6-55ac26c68958)
+- **[View Live Demo](https://easy-bank-react.netlify.app/)**
 
 ### [Product List with Cart Responsive || React || Redux-ToolKit || Tailwind](https://github.com/ahasan06/Frontend-MentorChallenges/tree/product-list-with-cart)
 ![Product list with cart](https://github.com/user-attachments/assets/ab1a18bd-4223-46e3-8a3a-3bd7b6daf7eb)
