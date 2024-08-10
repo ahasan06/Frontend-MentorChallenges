@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,*::after,*::before,h1,h2,h3,h4,p,li,a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+ @apply font-be-vietnam-pro 
+}
+
+.custom-btn { 
+  @apply bg-bright-red text-white cursor-pointer md:px-4 md:py-2 px-8 py-4 rounded-full shadow-lg shadow-red-200
+}
+.custom-btn a{
+  @apply text-sm
+}
+
+nav li a{
+  @apply text-very-dark-blue text-sm
+}
+
+.desktopNav{
+  @apply  hidden md:flex gap-4 capitalize 
+}
+.mobileNav{
+  @apply  md:hidden shadow-xl rounded bg-white text-center py-16 font-semibold gap-5 flex flex-col absolute top-24 left-1/2 -translate-x-1/2 w-10/12 
+}
+.card{
+  @apply flex flex-col gap-4 pb-10
+}
+.card__title{
+  @apply flex items-center gap-4 md:gap-1 bg-bright-red bg-opacity-25  md:bg-transparent rounded-l-full font-bold
+}
+.card__title p{
+  @apply bg-orange-600 text-white px-5 py-1 rounded-full
+}
+.card__body{
+  @apply text-sm text-gray-500 md:ml-16
+}
+
