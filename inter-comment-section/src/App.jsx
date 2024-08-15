@@ -47,7 +47,7 @@ function App() {
     setReplies(e.target.value)
   }
 
-  const handleToggleReplyForm = (id,username = '') => {
+  const handleToggleReplyForm = (id) => {
     setActiveReplyId(activeReplyId === id ? null : id)
   }
 
@@ -58,7 +58,7 @@ function App() {
     }
 
     const newCommentObj = {
-      id: commentData.length + 1,
+      id: Date.now(),
       content: newComment,
       createdAt: new Date().toISOString(),
       score: 0,
