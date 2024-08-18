@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before,
+body,
+html {
+
+  font-family: "Rubik", system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold text-slate-800
+}
+
+p {
+  line-height: 1.8;
+  @apply text-slate-600
+}
+
+.nav_list li {
+  @apply uppercase hover:text-soft-red transition-all
+}
+
+.nav__btn {
+  @apply bg-soft-red text-white px-7 py-1 rounded shadow-lg border border-transparent hover:border-soft-red hover:bg-transparent cursor-pointer
+}
+
+.hero__bg {
+  height: 70%;
+  width: 170%;
+  position: absolute;
+  right: -100%;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 200px 0 0 200px;
+  @apply bg-soft-blue
+}
+
+.tab__bg{
+  height: 70%;
+  width: 170%;
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 200px 200px 0;
+  @apply bg-soft-blue top-40 md:top-52
+}
