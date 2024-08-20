@@ -4,6 +4,8 @@ import Nav from './components/Nav'
 import Tabs from './components/Tabs'
 import Download from './components/Download'
 import CTA from './components/CTA'
+import Footer from './components/Footer'
+import FAQ from './components/FAQ'
 
 function App() {
 
@@ -15,7 +17,9 @@ function App() {
       <ShowCase/>
       <Tabs/>
       <Download/>
-      <CTA/>
+      <FAQ/>
+      <CTA/> 
+      <Footer/>
     </main>
   )
 

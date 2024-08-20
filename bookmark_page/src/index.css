@@ -56,5 +56,5 @@ p {
   bottom: 0;
   z-index: -1;
   border-radius: 0 200px 200px 0;
-  @apply bg-soft-blue top-40 md:top-52
+  @apply bg-soft-blue top-28 md:top-52
 }
