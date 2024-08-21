@@ -8,33 +8,31 @@
 *::before,
 body,
 html {
-
   font-family: "Rubik", system-ui;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
-
 }
 
 h1,
 h2,
 h3,
 h4 {
-  @apply font-bold text-slate-800
+  @apply font-bold text-slate-800;
 }
 
 p {
   line-height: 1.8;
-  @apply text-slate-600
+  @apply text-slate-600;
 }
 
 .nav_list li {
-  @apply uppercase hover:text-soft-red transition-all
+  @apply uppercase hover:text-soft-red transition-all;
 }
 
 .nav__btn {
-  @apply bg-soft-red text-white px-7 py-1 rounded shadow-lg border border-transparent hover:border-soft-red hover:bg-transparent cursor-pointer
+  @apply bg-soft-red text-white px-7 py-1 rounded shadow-lg border border-transparent hover:border-soft-red hover:bg-transparent cursor-pointer;
 }
 
 .hero__bg {
@@ -45,10 +43,10 @@ p {
   bottom: 0;
   z-index: -1;
   border-radius: 200px 0 0 200px;
-  @apply bg-soft-blue
+  @apply bg-soft-blue;
 }
 
-.tab__bg{
+.tab__bg {
   height: 70%;
   width: 170%;
   position: absolute;
@@ -56,5 +54,29 @@ p {
   bottom: 0;
   z-index: -1;
   border-radius: 0 200px 200px 0;
-  @apply bg-soft-blue top-28 md:top-52
+  @apply bg-soft-blue top-28 md:top-52;
+}
+
+nav.open {
+  @apply fixed flex flex-col text-center justify-between top-0 left-0 bg-very-dark-blue bg-opacity-70 h-full w-full z-50 p-10;
+}
+
+nav.open .nav__menu {
+  @apply flex flex-col gap-16;
+}
+
+nav .nav__btn {
+  @apply hover:text-soft-red border border-transparent hover:border-soft-red hover:bg-transparent bg-soft-red text-white px-6 py-2 shadow cursor-pointer inline-block rounded;
+}
+
+nav.open .nav__list {
+  @apply flex flex-col items-center text-white gap-6;
+}
+
+nav.open .nav__list li {
+  @apply border-t pt-6 w-full;
+}
+
+nav.open .nav_link {
+  @apply flex justify-center gap-10 text-2xl;
 }
