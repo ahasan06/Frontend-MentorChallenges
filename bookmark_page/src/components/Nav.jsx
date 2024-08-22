@@ -17,7 +17,7 @@ function Nav() {
   return (
     <div>
       <header className='flex items-center justify-between p-10'>
-        <div>
+        <div className={`${openMobNav? 'hidden':'block'}`}>
           <img src={logo} alt="Logo" />
         </div>
 
@@ -43,7 +43,7 @@ function Nav() {
           </ul>
         </nav>
 
-        <button className='md:hidden' onClick={handleNav}>
+        <button className={`${openMobNav? 'hidden':'block'} md:hidden`} onClick={handleNav}>
           <img src={hamburger} alt="Menu" />
         </button>
       </header>

@@ -58,7 +58,7 @@ p {
 }
 
 nav.open {
-  @apply fixed flex flex-col text-center justify-between top-0 left-0 bg-very-dark-blue bg-opacity-70 h-full w-full z-50 p-10;
+  @apply fixed flex flex-col text-center justify-between top-0 left-0 bg-very-dark-blue bg-opacity-90 h-full w-full z-50 p-10;
 }
 
 nav.open .nav__menu {
