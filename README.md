@@ -5,7 +5,7 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 ## Table of Contents
 <table>
      <tr>
-    <td><a href="https://github.com/ahasan06/restaurant-reactjs.git">easybank-landing-page</a></td>
+    <td><a href="https://github.com/ahasan06/restaurant-reactjs.git">Restaurent Nextjs</a></td>
   </tr>
    
    <tr>
