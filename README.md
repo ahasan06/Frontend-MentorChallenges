@@ -4,6 +4,10 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 
 ## Table of Contents
 <table>
+     <tr>
+    <td><a href="https://github.com/ahasan06/restaurant-reactjs.git">easybank-landing-page</a></td>
+  </tr>
+   
    <tr>
     <td><a href="https://github.com/ahasan06/Frontend-MentorChallenges/tree/easybank-landing-page">easybank-landing-page</a></td>
   </tr>
@@ -33,6 +37,12 @@ Welcome to my repository of projects from Frontend Mentor, where I explore moder
 ## Projects Overview
 
 Here's a list of projects you can explore. Click on the project name to go to the specific branch, or check out the live demo directly
+
+### [restaurant  Responsive || Nextjs || swiperjs || Tailwind](https://github.com/ahasan06/Frontend-MentorChallenges/tree/easybank-landing-page)
+![Restaurant Website](https://github.com/user-attachments/assets/e5287338-f0b3-4f37-8b15-9a4028972b33)
+- **[Live Demo](https://restaurant-tailwind-with-react.netlify.app/)**
+
+
 
 ### [Easy bank landing page Responsive || React || Tailwind](https://github.com/ahasan06/Frontend-MentorChallenges/tree/easybank-landing-page)
 ![easy bank](https://github.com/user-attachments/assets/62807c77-9533-4887-b8f6-55ac26c68958)
